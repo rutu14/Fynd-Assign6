@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+html {
+    background: #fafafa;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+footer{
+    background-color: #f2f2f2;
+}
+
+.footer-content{
+    margin: 200px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 100px 25px;
+}
+
+.footer-column-group{
+    flex-basis: 100%;    
+}
+
+.footer-column{
+    border-bottom: 1px solid rgba(180, 180, 180, 0.5);
+}
+
+.list-unstyled{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.show{
+    display: inline-block;
+}
+
+.list-unstyled li a{
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 5px 0;
+    display: inline-block;
+    color: #777777;
+}
+
+.footer-sub-heading h5{
+    margin: 0;
+    padding: 20px 0 10px 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .footer-column-group{
+        flex-basis: 20%;
+    }
+    .list-unstyled{
+        display: inline-block;
+    }
+    .footer-sub-heading h5{
+        padding: 20px 0 10px 0;
+        border-bottom: none;
+    }
+
+    .list-unstyled li a:hover{
+        text-decoration: underline;
+ 
+    }
+    .footer-column{
+        border-bottom: none;
+    }
+}
